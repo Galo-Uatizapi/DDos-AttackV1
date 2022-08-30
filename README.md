@@ -1,7 +1,11 @@
 </span>
 
 ![20220830_121903_edited](https://user-images.githubusercontent.com/100638890/187502621-8d35111c-7284-4c54-8915-b83ccecad909.jpg)
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-purple?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/Galo-Uatizapi/DDos-AttackV1?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/Galo-Uatizapi/DDos-AttackV1?color=teal&style=for-the-badge">
+</p>
 
 # Installation 
 ```pkg upgrade && pkg update -y
