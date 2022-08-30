@@ -4,7 +4,7 @@ pkg install python3
 pkg install git
 git clone https://github.com/Galo-Uatizapi/DDos-AttackV1
 cd DDos-AttackV1
-python3 ddos.py
+python3 ddos.py```
 
 # What is a DDos attack?
 
