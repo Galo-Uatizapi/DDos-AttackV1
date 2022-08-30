@@ -1,3 +1,8 @@
+</span>
+
+![20220830_121903_edited](https://user-images.githubusercontent.com/100638890/187502621-8d35111c-7284-4c54-8915-b83ccecad909.jpg)
+
+
 # Installation 
 ```pkg upgrade && pkg update -y
 pkg install python3
