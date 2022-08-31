@@ -25,12 +25,16 @@ def all():
 		print("\033[32mEnter target port \033[m\033[m", end=": ")
 		port = int(input("\033[36m"))
 		sock.connect((ip, port))
+		if ip.isalpha:
+			ip=socket.gethostbyname(ip)
+		else:
+			pass
 	except Exception as e:
 		print(f"""\033[31mSomething went wrong!
 Reason: \033[33m{e}\033[m""")
 		sleep(2)
 		all()
-	sleep(1.5)
+	sleep(0.5)
 	while True:
 		print("""
 \033[m[ \033[93m1 \033[m] \033[93mSingle line
@@ -51,16 +55,14 @@ Reason: \033[33m{e}\033[m
 ------------------------------""")
 				exit()
 			except KeyboardInterrupt:
-				print("""-----------------------------------
-\033[33mProgam ending! check back often!\033[m
+				print("""-----------------------------------\033[33mProgam ending! check back often!\033[m
 ------------------------------------""")
 				break
 		elif lines=="2":
 			sleep(1.5)
 			try:
 				for i in range(1, 100**1000):
-					color=["\033[m","\033[31m","\033[32m","\033[33m","\033[34m","\033[35m", "\033[36m","\033[37m"]
-					print(f"DDos-Attack | {random.choice(color)}Package {i} sent to {ip} through the door {port}\033[m")
+					print(f"\033[32mPackage \033[91m{i}\033[32m sent to \033[91m{ip}\033[32m through the door\033[91m {port}\033[m")
 					port=port+1
 			except Exception as e:
 				print(f"""------------------------------
@@ -68,12 +70,10 @@ Reason: \033[33m{e}\033[m
 Reason: \033[33m{e}\033[m
 ------------------------------""")
 				break
-				exit()
 			except KeyboardInterrupt:
 				print("-"*30,"""
 \033[33mProgam ending! check back often!\033[m
 ------------------------------""")
-				exit()
 		else:
 			print("\033[m[ \033[91m! \033[m] \033[91mInvalid option. Try again.\033[m")
 			sleep(2)
