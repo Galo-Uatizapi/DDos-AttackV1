@@ -53,10 +53,11 @@ Reason: \033[33m{e}\033[m""")
 				print(f"""------------------------------
 \033[91mProgram ending.
 Reason: \033[33m{e}\033[m
-		------------------------------""")
+------------------------------""")
 				exit()
 			except KeyboardInterrupt:
-				print("""-----------------------------------\033[33mProgam ending! check back often!\033[m
+				print("""-----------------------------------
+\033[33mProgam ending! check back often!\033[m
 ------------------------------------""")
 				break
 		elif lines=="2":
@@ -76,7 +77,6 @@ Reason: \033[33m{e}\033[m
 				print("-"*30,"""
 \033[33mProgam ending! check back often!\033[m
 ------------------------------""")
-				exit()
 		else:
 			print("\033[m[ \033[91m! \033[m] \033[91mInvalid option. Try again.\033[m")
 			sleep(2)
