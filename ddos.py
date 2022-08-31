@@ -72,6 +72,7 @@ Reason: \033[33m{e}\033[m
 \033[91mProgram ending.
 Reason: \033[33m{e}\033[m
 ------------------------------""")
+                        break
 				exit()
 			except KeyboardInterrupt:
 				print("-"*30,"""
