@@ -1,16 +1,17 @@
+def banner():
+	print("""\033[91m   ___  ___             ___  __  __           __  
+  / _ \/ _ \___  ___   / _ |/ /_/ /____ _____/ /__
+ / // / // / _ \(_-<  / __ / __/ __/ _ `/ __/  '_/
+/____/____/\___/___/ /_/ |_\__/\__/\_,_/\__/_/\_\ 
+                                                                                                           Version 1.0                                            """)
 def all():
 	from time import sleep
 	from os import system
 	import socket
 	import random
 	system("clear")
-	print("""\033[91m   ___  ___             ___  __  __           __  
-  / _ \/ _ \___  ___   / _ |/ /_/ /____ _____/ /__
- / // / // / _ \(_-<  / __ / __/ __/ _ `/ __/  '_/
-/____/____/\___/___/ /_/ |_\__/\__/\_,_/\__/_/\_\ 
-                                                                                                           Version 1.0                                            
-\033[35m
------------------------------
+	banner()
+	print(f"""\033[35m-----------------------------
 | GitHub : Galo-Uatizapi    |
 | Instagram : @kypton_usr   |
 | YouTube : Cookie $        |
@@ -38,12 +39,8 @@ Reason: \033[33m{e}\033[m""")
 		if lines=="1":
 			sleep(1.5)
 			system("clear")
-			print("""\033[91m   ___  ___             ___  __  __           __  
-  / _ \/ _ \___  ___   / _ |/ /_/ /____ _____/ /__
- / // / // / _ \(_-<  / __ / __/ __/ _ `/ __/  '_/
-/____/____/\___/___/ /_/ |_\__/\__/\_,_/\__/_/\_\ 
-                                                                                                           Version 1.0                                            
-\033[35m\033[93mType \033[32mCTRL + C \033[93mto cancel the attack.\033[m""")
+			banner()
+			print("""\033[35m\033[93mType \033[32mCTRL + C \033[93mto cancel the attack.\033[m""")
 			try:
 				for i in range(1, 100**1000):
 					print(f"\033[35mPackages sent \033[m: \033[36m{i}\033[m", end="\r")
@@ -54,7 +51,8 @@ Reason: \033[33m{e}\033[m
 ------------------------------""")
 				exit()
 			except KeyboardInterrupt:
-				print("""-----------------------------------\033[33mProgam ending! check back often!\033[m
+				print("""-----------------------------------
+\033[33mProgam ending! check back often!\033[m
 ------------------------------------""")
 				break
 		elif lines=="2":
