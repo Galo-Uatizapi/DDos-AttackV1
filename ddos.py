@@ -21,9 +21,9 @@ def all():
 	bytes = random._urandom(10000)
 	try:
 		print("\033[32mEnter target IP \033[m\033[m", end=": ")
-		ip = input("\033[36m")
+		ip = input("\033[36m").strip()
 		print("\033[32mEnter target port \033[m\033[m", end=": ")
-		port = int(input("\033[36m"))
+		port = int(input("\033[36m")).strip()
 		sock.connect((ip, port))
 		if ip.isalpha:
 			ip=socket.gethostbyname(ip)
