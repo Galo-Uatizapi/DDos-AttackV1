@@ -74,6 +74,7 @@ Reason: \033[33m{e}\033[m
 				print("-"*30,"""
 \033[33mProgam ending! check back often!\033[m
 ------------------------------""")
+				break
 		else:
 			print("\033[m[ \033[91m! \033[m] \033[91mInvalid option. Try again.\033[m")
 			sleep(2)
